@@ -59,13 +59,7 @@ static LCM_UTIL_FUNCS lcm_util = {0};
 #define read_reg(cmd)											lcm_util.dsi_dcs_read_lcm_reg(cmd)
 #define read_reg_v2(cmd, buffer, buffer_size)   				lcm_util.dsi_dcs_read_lcm_reg_v2(cmd, buffer, buffer_size)
 
-static struct LCM_setting_table {
-    unsigned cmd;
-    unsigned char count;
-    unsigned char para_list[128];
-};
-
-static struct LCM_setting_table lcm_initialization_setting[] = {
+static struct LCM_setting_table_V3 lcm_initialization_setting[] = {
 {0x15,0x00,1,{0x00}},
 {0x39,0xFF,3,{0x12,0x83,0x01}},
 {0x15,0x00,1,{0x80}},
