@@ -345,7 +345,7 @@ static void lcm_suspend(void)
 
 static void lcm_resume(void)
 {
-	return 1;
+	lcm_init();
 }
 
 /* ---------------------------------------------------------------------------
