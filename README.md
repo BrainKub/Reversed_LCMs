@@ -14,4 +14,4 @@ This repo is about my reversed lcms for various devices! all of them are working
 if you want i'll decode your LCMs too, just provide me a server and i'll do it for you!
 
 ### Contact 
-> abyss9979@gmail.com
+> frap13000@gmail.com
