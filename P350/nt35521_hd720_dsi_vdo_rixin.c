@@ -284,7 +284,7 @@ static void lcm_get_params(LCM_PARAMS *params)
  params->dsi.word_count = 2160;
  params->dsi.horizontal_sync_active = 4;
  params->dsi.lcm_esd_check_table[0].cmd = 0x0A;
- params->dsi.lcm_esd_check_table[0].para_list[0] = 0x00;
+ params->dsi.lcm_esd_check_table[0].para_list[0] = -100;
  params->dsi.PLL_CLOCK = 239;
  params->type = 2;
  params->dsi.data_format.format = 2;
@@ -356,7 +356,10 @@ static void lcm_init(void)
 	SET_RESET_PIN(0);
 	MDELAY(50);
 	SET_RESET_PIN(1);
-	MDELAY(120);      
+	MDELAY(120);
+	
+	push_table(lcm_initialization_setting, sizeof(lcm_initialization_setting) / sizeof(struct LCM_setting_table), 1);
+
 }
 
 static void lcm_suspend(void)
