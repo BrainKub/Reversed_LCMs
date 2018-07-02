@@ -1,6 +1,6 @@
 /*----------------------------------------------------------------
- * Author : Yuvraj Saxena (frap13000@github.com)
- * Contact : frap13000@gmail.com
+ * Author : Yuvraj Saxena (thefrap130@github.com)
+ * Contact : thefrap130@gmail.com
  * Note : (Don't remove this block of code from here!)
  * Neither you and nor your any friends or family members will!
  * change credits from here! you know the consequences of removing!
@@ -66,7 +66,7 @@ static struct LCM_setting_table
 {
     unsigned cmd;
     unsigned char count;
-    unsigned char para_list[64];
+    unsigned char para_list[72];
 };
 
 static struct LCM_setting_table lcm_initialization_setting[] =
